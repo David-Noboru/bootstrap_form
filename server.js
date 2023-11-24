@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Server online')
 })
+
+app.get('/agora', (req, res) => {
+    res.send('Agora deu certo!')
+  })
