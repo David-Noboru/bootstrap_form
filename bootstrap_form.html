@@ -2,13 +2,46 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Seu Projeto</title>
+  <title>Cadastro de um loja</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container mt-5">
+    <h1>Cadastro dos seu produtos</h1>
+    <form>
+      <div class="mb-3">
+        <label for="inputNome" class="form-label">Nome do produto:</label>
+        <input type="text" class="form-control" id="inputNome" placeholder="Digite o nome do produto">
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Nome do Fornecedor:</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Digite o nome do fornecedor">
+      </div>
+      <div class="mb-3">
+        <label for="inputData" class="form-label">Data da compra:</label>
+        <input type="date" class="form-control" id="inputData" name="data">
+      </div>
+    </form>
+    <div class="mb-3">
+        <label for="inputValorCompra" class="form-label">Valor de Compra:</label>
+        <input type="number" class="form-control" id="inputValorCompra" name="valorCompra" step="0.01" min="0">
+      </div>
+      <div class="mb-3">
+        <label for="inputValorVenda" class="form-label">Valor de Venda:</label>
+        <input type="number" class="form-control" id="inputValorVenda" name="valorVenda" step="0.01" min="0">
+      </div>    
+      <div class="mb-3">
+        <label for="inputCategoria" class="form-label">Categoria:</label>
+        <select class="form-select" id="inputCategoria" name="categoria">
+          <option value="eletronicos">Eletrônicos</option>
+          <option value="vestuario">Vestuário</option>
+          <option value="alimentos">Alimentos</option>
+          <!-- Outras opções de categoria -->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
 
-    <h3>Meu aplicativo com express-handlebars e bootstrap.</h3>
-    <form action="Produto"><button></button></form>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
