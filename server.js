@@ -1,4 +1,5 @@
 const express = require('express')
+const { link } = require('fs')
 
 const app = express()
 
@@ -12,4 +13,8 @@ app.listen(3000, () => {
 
 app.get('/agora', (req, res) => {
     res.send('Agora deu certo!')
+  })
+
+  app.get('/eita', (req, res) => {
+    res.send('Agora d')
   })
